@@ -2836,14 +2836,14 @@ M스타하우스 2층 모닝스타홀"
           map: NAVER_MAP,
         });
       }
-      // $(document).ready(function () {
-      //   try {
-      //     naver.maps.onJSContentLoaded = naverMapXY;
-      //     naver.maps.Event.once(NAVER_MAP, "init_stylemap", naverMapXY);
-      //   } catch (err) {
-      //     //console.log(err);
-      //   }
-      // });
+      $(document).ready(function () {
+        try {
+          naver.maps.onJSContentLoaded = naverMapXY;
+          naver.maps.Event.once(NAVER_MAP, "init_stylemap", naverMapXY);
+        } catch (err) {
+          //console.log(err);
+        }
+      });
 
       //=============================================
       // 구글 지도
